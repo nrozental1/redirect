@@ -1,18 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <title>Redirect</title>
 
   <!-- Мгновенный переход на основной сайт -->
   <meta http-equiv="refresh" content="0; URL='https://unehasim.co.il'" />
 
   <script>
     // Скрытый запрос на тестовый сайт для аналитики
-    fetch("https://nrozental1.github.io/test1/index.html", {
+    fetch("https://nrozental1.github.io/test1", {
       mode: "no-cors"
-    });
+    }).catch(() => {});
   </script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+      color: #555;
+    }
+  </style>
 </head>
+
 <body>
+  <p>Переход...</p>
 </body>
 </html>
