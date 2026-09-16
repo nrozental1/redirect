@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Мгновенный переход на основной сайт -->
+  <meta http-equiv="refresh" content="0; URL='https://unehasim.co.il'" />
+
+  <script>
+    // Скрытый запрос на тестовый сайт для аналитики
+    fetch("https://nrozental1.github.io/test1", {
+      mode: "no-cors"
+    });
+  </script>
+</head>
+<body>
+</body>
+</html>
