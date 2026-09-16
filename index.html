@@ -4,14 +4,16 @@
   <meta charset="UTF-8">
   <title>Redirect</title>
 
-  <!-- Мгновенный переход на основной сайт -->
-  <meta http-equiv="refresh" content="0; URL='https://unehasim.co.il'" />
-
   <script>
     // Скрытый запрос на тестовый сайт для аналитики
     fetch("https://nrozental1.github.io/test1", {
       mode: "no-cors"
     }).catch(() => {});
+
+    // Задержка перед переходом (в миллисекундах)
+    setTimeout(() => {
+      window.location.href = "https://unehasim.co.il";
+    }, 1500); // 1500 = 1.5 секунды
   </script>
 
   <style>
@@ -28,3 +30,4 @@
   <p>Переход...</p>
 </body>
 </html>
+
